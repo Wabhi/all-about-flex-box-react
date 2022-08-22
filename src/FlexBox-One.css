@@ -1,0 +1,31 @@
+nav {
+  border: solid 2px red;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+li {
+  border: solid 2px green;
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+/* flex-grpw default value 0 */
+/* flex-shrink defaul value 1 */
+/* both will be apply on child element */
