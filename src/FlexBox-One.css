@@ -26,6 +26,33 @@ li {
   flex-shrink: 1;
 }
 
-/* flex-grpw default value 0 */
+.columns {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border: 4px solid crimson;
+}
+
+@media (min-width: 750px) {
+  .columns {
+    flex-direction: row;
+  }
+}
+
+.columns > * {
+  /* flex-shrink: 1; */
+  flex: 1;
+}
+
+.card {
+  padding: 1rem;
+  background-color: greenyellow;
+}
+
+/* flex-grow default value 0 */
 /* flex-shrink defaul value 1 */
+/* flex-basis default value auto */
 /* both will be apply on child element */
+/* flex:1 => contain three value it's shorhand flex-grow:1, flex-shrink:1, flex-basis:0*/
+/* flex-direction default value is row */
+/* flex-direction:row main axis X and cross axis Y flex-direction:column main axis is Y and cross axis X */
