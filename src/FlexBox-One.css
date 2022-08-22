@@ -4,6 +4,10 @@ nav {
   margin: 0;
 }
 
+.horizantl-line {
+  border: 5px solid red;
+}
+
 h1 {
   text-align: center;
 }
@@ -56,3 +60,36 @@ li {
 /* flex:1 => contain three value it's shorhand flex-grow:1, flex-shrink:1, flex-basis:0*/
 /* flex-direction default value is row */
 /* flex-direction:row main axis X and cross axis Y flex-direction:column main axis is Y and cross axis X */
+/* justify-content default value flex-start */
+/* justify-content apply on main axis */
+/* align-item apply on cross axis */
+/* justify-content take care about group of items */
+/* align-items take care about individual item */
+
+.boxes {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.box {
+  width: 350px;
+  height: 350px;
+  border: 2px solid crimson;
+  background-color: aquamarine;
+}
+
+.outter-div {
+  width: 550px;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: cornflowerblue;
+}
+
+.inner-div {
+  width: 250px;
+  height: 150px;
+  background-color: violet;
+}
